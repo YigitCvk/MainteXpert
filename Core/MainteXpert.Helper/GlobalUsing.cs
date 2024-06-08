@@ -1,0 +1,11 @@
+﻿global using System.Text.Json;
+global using System.Text.Json.Serialization;
+global using System.ComponentModel;
+global using System.Globalization;
+global using System.ComponentModel.DataAnnotations;
+global using System.Reflection;
+global using System.Resources;
+global using  System.Drawing;
+global using System.Drawing;
+global using System.Drawing.Drawing2D;
+global using System.Drawing.Imaging;

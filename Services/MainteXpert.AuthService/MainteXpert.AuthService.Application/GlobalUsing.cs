@@ -1,0 +1,14 @@
+﻿global using Authentication.Application.Mapper;
+global using AutoMapper;
+global using FluentValidation;
+global using MediatR;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Middlewares.Behaviors;
+global using Serilog;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Reflection;
+global using System.Text;
+global using System.Threading.Tasks;
