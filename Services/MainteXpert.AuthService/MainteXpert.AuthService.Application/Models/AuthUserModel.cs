@@ -1,11 +1,8 @@
-﻿using Common.Models;
-using Common.Models.User;
-
-namespace Authentication.Application.Models
+﻿namespace Authentication.Application.Models
 {
     public class AuthUserModel
     {
-        
+
         public string Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }

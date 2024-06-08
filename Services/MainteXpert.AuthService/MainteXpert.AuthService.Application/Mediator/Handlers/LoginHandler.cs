@@ -1,25 +1,4 @@
-﻿using Authentication.Application.Helper;
-using Authentication.Application.Mediator.Queries;
-using Authentication.Application.Models;
-using AutoMapper;
-using Common.Models.Base;
-using Common.Models.User;
-using MediatR;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using Mongo.Collections.User;
-using Mongo.Interface;
-using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Net;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Authentication.Application.Mediator.Handlers
+﻿namespace Authentication.Application.Mediator.Handlers
 {
     public class LoginHandler : IRequestHandler<LoginQuery, ResponseModel<AuthUserModel>>
     {
@@ -51,7 +30,7 @@ namespace Authentication.Application.Mediator.Handlers
                     if (!user.IsActive)
                     {
                         return ResponseModel<AuthUserModel>
-                                .Fail(data: null,message:"giriş yapılamıyor yönetici onayı gerekli");
+                                .Fail(data: null, message: "giriş yapılamıyor yönetici onayı gerekli");
                     }
                     else
                     {

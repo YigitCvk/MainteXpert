@@ -31,11 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.WorkerService",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.UserService.Application", "Services\MainteXpert.UserService\MainteXpert.UserService.Application\MainteXpert.UserService.Application.csproj", "{CFFC724E-071E-42E4-AA7D-85EA262910E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.UserService.API", "Services\MainteXpert.UserService\MainteXpert.UserService.API\MainteXpert.UserService.API.csproj", "{CF88C571-7021-40CF-9A8A-D9DEF8B6EEC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.UserService.API", "Services\MainteXpert.UserService\MainteXpert.UserService.API\MainteXpert.UserService.API.csproj", "{CF88C571-7021-40CF-9A8A-D9DEF8B6EEC5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationService", "AuthenticationService", "{225E8B4F-F9B3-43A1-9C9A-0D66A3A9516C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.AuthService.Application", "Services\MainteXpert.AuthService\MainteXpert.AuthService.Application\MainteXpert.AuthService.Application.csproj", "{CA5E33FB-2BC5-4A7D-A90C-B93209687125}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,10 +73,6 @@ Global
 		{CF88C571-7021-40CF-9A8A-D9DEF8B6EEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF88C571-7021-40CF-9A8A-D9DEF8B6EEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF88C571-7021-40CF-9A8A-D9DEF8B6EEC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CA5E33FB-2BC5-4A7D-A90C-B93209687125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA5E33FB-2BC5-4A7D-A90C-B93209687125}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA5E33FB-2BC5-4A7D-A90C-B93209687125}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA5E33FB-2BC5-4A7D-A90C-B93209687125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,7 +90,6 @@ Global
 		{CFFC724E-071E-42E4-AA7D-85EA262910E2} = {64AC6140-7537-4B69-A85E-A3711FC266DB}
 		{CF88C571-7021-40CF-9A8A-D9DEF8B6EEC5} = {64AC6140-7537-4B69-A85E-A3711FC266DB}
 		{225E8B4F-F9B3-43A1-9C9A-0D66A3A9516C} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
-		{CA5E33FB-2BC5-4A7D-A90C-B93209687125} = {225E8B4F-F9B3-43A1-9C9A-0D66A3A9516C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2DED1DD-27C1-41FE-B5B1-7AC3D3A095A4}

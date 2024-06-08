@@ -1,19 +1,4 @@
-﻿using Authentication.Application.Helper;
-using Authentication.Application.Mediator.Commands;
-using Authentication.Application.Models;
-using AutoMapper;
-using Common.Models.Base;
-using Common.Models.User;
-using MediatR;
-using Mongo.Collections.User;
-using Mongo.Interface;
-using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Authentication.Application.Mediator.Handlers
 {
     public class VerifyUserHandler : IRequestHandler<VerifyUserCommand, ResponseModel<AuthUserModel>>
@@ -24,7 +9,7 @@ namespace Authentication.Application.Mediator.Handlers
 
         private readonly IMapper _mapper;
 
-        public VerifyUserHandler(IMongoRepository<UserCollection> collection, 
+        public VerifyUserHandler(IMongoRepository<UserCollection> collection,
             IMapper mapper,
             IMongoRepository<UserRoleCollection> roleCollection,
             ITokenGenerator tokenGenerator)
@@ -62,7 +47,7 @@ namespace Authentication.Application.Mediator.Handlers
             }
             catch (Exception ex)
             {
-                return ResponseModel<AuthUserModel>.Fail(data:null,message:ex.Message);
+                return ResponseModel<AuthUserModel>.Fail(data: null, message: ex.Message);
             }
 
         }
