@@ -1,0 +1,6 @@
+@MainteXpert.ErrorCardService.API_HostAddress = http://localhost:5219
+
+GET {{MainteXpert.ErrorCardService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

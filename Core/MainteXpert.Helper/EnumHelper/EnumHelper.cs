@@ -1,4 +1,6 @@
-﻿namespace MainteXpert.Helper.EnumHelper
+﻿
+
+namespace MainteXpert.Helper.EnumHelper
 {
     public static class EnumHelper
     {

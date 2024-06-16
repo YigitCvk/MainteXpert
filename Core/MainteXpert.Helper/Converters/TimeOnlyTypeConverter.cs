@@ -1,4 +1,6 @@
-﻿namespace MainteXpert.Helper.Converters
+﻿
+
+namespace MainteXpert.Helper.Converters
 {
     public class TimeOnlyTypeConverter : TypeConverter
     {
