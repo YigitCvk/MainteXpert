@@ -3,14 +3,27 @@
     public class ResponseModel<T>
     {
         public T Data { get; set; }
+        public List<T> Datas { get; set; }
         public bool IsSuccess { get; set; }
         public string Message { get; set; }
         public int HttpStatus { get; set; }
+        public int TotalCount { get; set; }
+
         public ResponseModel(T Data)
         {
             this.Data = Data;
         }
-
+        public ResponseModel(List<T> data)
+        {
+            this.Datas = data;
+        }
+      
+        public ResponseModel(T data, string message)
+        {
+            Data = data;
+            Message = message;
+            TotalCount = data == null ? 0 : 1;
+        }
         public static ResponseModel<T> Success(T data, string message = "")
         {
             ResponseModel<T> response = new ResponseModel<T>(data);

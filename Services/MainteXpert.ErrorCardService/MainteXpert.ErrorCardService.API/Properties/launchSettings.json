@@ -39,5 +39,13 @@
       "publishAllPorts": true,
       "useSSL": true
     }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59424/",
+      "sslPort": 44375
+    }
   }
 }

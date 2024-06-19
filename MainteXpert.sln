@@ -33,8 +33,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.UserService.App
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.UserService.API", "Services\MainteXpert.UserService\MainteXpert.UserService.API\MainteXpert.UserService.API.csproj", "{CF88C571-7021-40CF-9A8A-D9DEF8B6EEC5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationService", "AuthenticationService", "{225E8B4F-F9B3-43A1-9C9A-0D66A3A9516C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.APIGateway", "Gateway\MainteXpert.APIGateway\MainteXpert.APIGateway.csproj", "{24195C7F-F70F-433C-9B36-F4A67ACFAED1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{D9B6AAE7-8462-4C5D-AB57-ED85B402A45D}"
@@ -50,6 +48,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.ErrorCardService.Application", "Services\MainteXpert.ErrorCardService\MainteXpert.ErrorCardService.Application\MainteXpert.ErrorCardService.Application.csproj", "{E9150129-D59D-437A-B9F1-438EA4E654A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.ErrorCardService.API", "Services\MainteXpert.ErrorCardService\MainteXpert.ErrorCardService.API\MainteXpert.ErrorCardService.API.csproj", "{83D1229B-9F6B-4CD4-A16C-6579B87D50A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MaintenanceScheduleService", "MaintenanceScheduleService", "{C23C4561-CED4-4873-AE64-CDF27376F6DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.MaintenanceSchedule.Application", "Services\MaintenanceScheduleService\MainteXpert.MaintenanceSchedule.Application\MainteXpert.MaintenanceSchedule.Application.csproj", "{09404BA0-210E-47CD-B3B9-1D3C35F60194}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,10 @@ Global
 		{83D1229B-9F6B-4CD4-A16C-6579B87D50A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83D1229B-9F6B-4CD4-A16C-6579B87D50A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83D1229B-9F6B-4CD4-A16C-6579B87D50A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09404BA0-210E-47CD-B3B9-1D3C35F60194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09404BA0-210E-47CD-B3B9-1D3C35F60194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09404BA0-210E-47CD-B3B9-1D3C35F60194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09404BA0-210E-47CD-B3B9-1D3C35F60194}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,13 +131,14 @@ Global
 		{73E13649-1889-4B5F-9241-273F5AFBAEE1} = {BA160063-CED1-4C50-8988-76A72DF0D8B7}
 		{CFFC724E-071E-42E4-AA7D-85EA262910E2} = {64AC6140-7537-4B69-A85E-A3711FC266DB}
 		{CF88C571-7021-40CF-9A8A-D9DEF8B6EEC5} = {64AC6140-7537-4B69-A85E-A3711FC266DB}
-		{225E8B4F-F9B3-43A1-9C9A-0D66A3A9516C} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
 		{24195C7F-F70F-433C-9B36-F4A67ACFAED1} = {CBC315AA-600A-4583-84AF-3D32C52F51EB}
 		{3B37C8CA-ABD3-4835-AD50-5652B2733B42} = {4B4B8984-5736-44C9-BB5D-F245B6FB14B6}
 		{3080691D-01EC-424E-B7C6-AFB1036C7BE4} = {D9B6AAE7-8462-4C5D-AB57-ED85B402A45D}
 		{A49A5DD7-34DE-402F-B8D6-3351847C1D72} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
 		{E9150129-D59D-437A-B9F1-438EA4E654A1} = {A49A5DD7-34DE-402F-B8D6-3351847C1D72}
 		{83D1229B-9F6B-4CD4-A16C-6579B87D50A2} = {A49A5DD7-34DE-402F-B8D6-3351847C1D72}
+		{C23C4561-CED4-4873-AE64-CDF27376F6DC} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
+		{09404BA0-210E-47CD-B3B9-1D3C35F60194} = {C23C4561-CED4-4873-AE64-CDF27376F6DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2DED1DD-27C1-41FE-B5B1-7AC3D3A095A4}
