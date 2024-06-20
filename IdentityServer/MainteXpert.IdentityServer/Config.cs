@@ -12,6 +12,7 @@ public static class Config
         new ApiResource("resource_errorcard", "ErrorCard API"){Scopes={"errorcard_fullpermission"}},
         new ApiResource("resource_lookup", "Lookup API"){Scopes={"lookup_fullpermission"}},
         new ApiResource("resource_report", "Report API"){Scopes={"report_fullpermission"}},
+        new ApiResource("resource_maintenance", "Report API"){Scopes={"maintenance_fullpermission"}},
         new ApiResource("resource_gateway", "Gateway API"){Scopes={"gateway_fullpermission"}},
         new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
     };
@@ -39,6 +40,7 @@ public static class Config
             new ApiScope("report_fullpermission", "Report API için full erişim"),
             new ApiScope("user_fullpermission", "User API için full erişim"),
             new ApiScope("lookup_fullpermission", "Lookup API için full erişim"),
+            new ApiScope("maintenance_fullpermission", "Maintenance Schedule API için full erişim"),
             new ApiScope("gateway_fullpermission", "Gateway API için full erişim"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
@@ -59,6 +61,7 @@ public static class Config
                     "lookup_fullpermission",
                     "report_fullpermission",
                     "user_fullpermission",
+                    "maintenance_fullpermission",
                     "gateway_fullpermission",
                     IdentityServerConstants.LocalApi.ScopeName
                 }
@@ -77,6 +80,7 @@ public static class Config
                     "lookup_fullpermission",
                     "report_fullpermission",
                     "user_fullpermission",
+                    "maintenance_fullpermission",
                     "gateway_fullpermission",
                     IdentityServerConstants.StandardScopes.Email,
                     IdentityServerConstants.StandardScopes.OpenId,
@@ -103,6 +107,7 @@ public static class Config
                     "lookup_fullpermission",
                     "report_fullpermission",
                     "user_fullpermission",
+                    "maintenance_fullpermission",
                     "payment_fullpermission",
                     IdentityServerConstants.StandardScopes.OpenId
                 }

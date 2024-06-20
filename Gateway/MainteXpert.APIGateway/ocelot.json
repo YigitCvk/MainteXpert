@@ -32,6 +32,29 @@
         "DurationOfBreak": 5000,
         "TimeoutValue": 2000
       }
+    },
+    {
+      "Servicename": "MaintenanceScheduleService",
+      "DownstreamPathTemplate": "/api/maintenancetasks/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/maintenancetasks/{everything}",
+      "UpstreamHttpMethod": [ "POST", "GET", "PUT", "DELETE" ],
+      "UseServiceDiscovery": true,
+      "RouteIsCaseSensitive": false,
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 5000,
+        "TimeoutValue": 2000
+      }
     }
   ],
   "GlobalConfiguration": {

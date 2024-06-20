@@ -1,7 +1,4 @@
-﻿using MainteXpert.ErrorCardService.Application.DI;
-using MainteXpert.Middleware.Exceptions;
-using MainteXpert.Repository.Repository;
-using Microsoft.OpenApi.Models;
+﻿
 
 var builder = WebApplication.CreateBuilder(args);
 

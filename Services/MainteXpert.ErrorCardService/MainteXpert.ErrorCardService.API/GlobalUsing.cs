@@ -16,3 +16,7 @@ global using MainteXpert.Repository.Configration;
 global using MainteXpert.Repository.Interface;
 global using Microsoft.AspNetCore.Mvc.Authorization;
 global using Microsoft.Extensions.Options;
+global using MainteXpert.ErrorCardService.Application.DI;
+global using MainteXpert.Middleware.Exceptions;
+global using MainteXpert.Repository.Repository;
+global using Microsoft.OpenApi.Models;

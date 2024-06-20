@@ -45,13 +45,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.Shared", "Share
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ErrorCardService", "ErrorCardService", "{A49A5DD7-34DE-402F-B8D6-3351847C1D72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.ErrorCardService.Application", "Services\MainteXpert.ErrorCardService\MainteXpert.ErrorCardService.Application\MainteXpert.ErrorCardService.Application.csproj", "{E9150129-D59D-437A-B9F1-438EA4E654A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.ErrorCardService.Application", "Services\MainteXpert.ErrorCardService\MainteXpert.ErrorCardService.Application\MainteXpert.ErrorCardService.Application.csproj", "{E9150129-D59D-437A-B9F1-438EA4E654A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.ErrorCardService.API", "Services\MainteXpert.ErrorCardService\MainteXpert.ErrorCardService.API\MainteXpert.ErrorCardService.API.csproj", "{83D1229B-9F6B-4CD4-A16C-6579B87D50A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.ErrorCardService.API", "Services\MainteXpert.ErrorCardService\MainteXpert.ErrorCardService.API\MainteXpert.ErrorCardService.API.csproj", "{83D1229B-9F6B-4CD4-A16C-6579B87D50A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MaintenanceScheduleService", "MaintenanceScheduleService", "{C23C4561-CED4-4873-AE64-CDF27376F6DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.MaintenanceSchedule.Application", "Services\MaintenanceScheduleService\MainteXpert.MaintenanceSchedule.Application\MainteXpert.MaintenanceSchedule.Application.csproj", "{09404BA0-210E-47CD-B3B9-1D3C35F60194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.MaintenanceSchedule.Application", "Services\MaintenanceScheduleService\MainteXpert.MaintenanceSchedule.Application\MainteXpert.MaintenanceSchedule.Application.csproj", "{09404BA0-210E-47CD-B3B9-1D3C35F60194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.MaintenanceScheduleService.API", "Services\MaintenanceScheduleService\MainteXpert.MaintenanceScheduleService.API\MainteXpert.MaintenanceScheduleService.API.csproj", "{EF02E4D5-E045-4F4D-96D2-93B5256DD492}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +117,10 @@ Global
 		{09404BA0-210E-47CD-B3B9-1D3C35F60194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09404BA0-210E-47CD-B3B9-1D3C35F60194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09404BA0-210E-47CD-B3B9-1D3C35F60194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF02E4D5-E045-4F4D-96D2-93B5256DD492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF02E4D5-E045-4F4D-96D2-93B5256DD492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF02E4D5-E045-4F4D-96D2-93B5256DD492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF02E4D5-E045-4F4D-96D2-93B5256DD492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +145,7 @@ Global
 		{83D1229B-9F6B-4CD4-A16C-6579B87D50A2} = {A49A5DD7-34DE-402F-B8D6-3351847C1D72}
 		{C23C4561-CED4-4873-AE64-CDF27376F6DC} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
 		{09404BA0-210E-47CD-B3B9-1D3C35F60194} = {C23C4561-CED4-4873-AE64-CDF27376F6DC}
+		{EF02E4D5-E045-4F4D-96D2-93B5256DD492} = {C23C4561-CED4-4873-AE64-CDF27376F6DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2DED1DD-27C1-41FE-B5B1-7AC3D3A095A4}
