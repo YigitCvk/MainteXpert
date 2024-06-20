@@ -47,7 +47,16 @@ builder.Services.AddControllers(opt => opt.Filters.Add(new AuthorizeFilter()));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "MainteXpert.ErrorCardService", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "MainteXpert.ErrorCardService",
+        Version = "v1",
+        Contact = new OpenApiContact
+        {
+            Name = "Yiğit ÇEVİK",
+            Email = "me@yigitcevik.dev"
+        }
+    });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {

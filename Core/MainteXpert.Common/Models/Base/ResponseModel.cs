@@ -8,6 +8,8 @@
         public string Message { get; set; }
         public int HttpStatus { get; set; }
         public int TotalCount { get; set; }
+        public List<string> Errors { get; set; }
+
 
         public ResponseModel(T Data)
         {
@@ -23,6 +25,8 @@
             Data = data;
             Message = message;
             TotalCount = data == null ? 0 : 1;
+            Errors = new List<string> { message };
+
         }
         public static ResponseModel<T> Success(T data, string message = "")
         {

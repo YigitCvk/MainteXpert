@@ -13,3 +13,5 @@ global using MainteXpert.MaintenanceSchedule.Application.DI;
 global using Microsoft.Extensions.Options;
 global using MainteXpert.Middleware.Exceptions;
 global using MainteXpert.MaintenanceSchedule.Application.DI;
+global using MainteXpert.Middleware.Behaviors;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;

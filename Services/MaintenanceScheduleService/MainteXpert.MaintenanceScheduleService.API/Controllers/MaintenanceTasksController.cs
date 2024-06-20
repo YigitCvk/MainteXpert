@@ -1,4 +1,9 @@
-﻿namespace MainteXpert.MaintenanceSchedule.API.Controllers
+﻿using MainteXpert.Common.Models;
+using MainteXpert.MaintenanceSchedule.Application.Models;
+using MongoDB.Driver;
+using System.Net;
+
+namespace MainteXpert.MaintenanceSchedule.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -31,11 +36,15 @@
 
         // Create a new maintenance task
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] MaintenanceTaskModel maintenanceTaskModel)
+        [ProducesResponseType(typeof(ResponseModel<MaintenanceTaskModel>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult> Post([FromBody] MaintenanceTaskModel command)
         {
-            var command = new CreateMaintenanceTaskCommand(maintenanceTaskModel);
-            var result = await _mediator.Send(command);
-            return CreatedAtAction(nameof(Get), new { id = result.Data.Id }, result);
+            var commands = new CreateMaintenanceTaskCommand(command);
+            var result = await _mediator.Send(commands);
+            return new ObjectResult(result)
+            {
+                StatusCode = result.HttpStatus
+            };
         }
 
         // Update an existing maintenance task

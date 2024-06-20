@@ -1,4 +1,4 @@
-using MainteXpert.UserService.Application.DI;
+﻿using MainteXpert.UserService.Application.DI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +27,16 @@ builder.Services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "MainteXpert.User", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "MainteXpert.UserService",
+        Version = "v1",
+        Contact = new OpenApiContact
+        {
+            Name = "Yiğit ÇEVİK",
+            Email = "me@yigitcevik.dev"
+        }
+    });
     c.AddSecurityDefinition(config["JWT:ProviderKey"], new OpenApiSecurityScheme
     {
         Name = "Authorization",

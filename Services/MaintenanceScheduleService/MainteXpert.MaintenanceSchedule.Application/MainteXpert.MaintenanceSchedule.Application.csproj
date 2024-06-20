@@ -21,8 +21,4 @@
     <ProjectReference Include="..\..\..\Repository\MainteXpert.Repository\MainteXpert.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Validations\" />
-  </ItemGroup>
-
 </Project>
