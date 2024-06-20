@@ -20,12 +20,4 @@ Projenin çalışması için aşağıdaki araçların yüklü olması gerekmekte
 ## İçindekiler
 
 Mikroservisler
-Proje, aşağıdaki mikroservislerden oluşmaktadır:
-
-IdentityServer: Kimlik doğrulama ve yetkilendirme hizmeti.
-ErrorCardService: Hata kartı yönetimi.
-ActivityService: Aktivite yönetimi.
-ReportService: Raporlama hizmeti.
-UserService: Kullanıcı yönetimi.
-LookupService: Kod ve referans verilerinin yönetimi.
-GatewayService: API Gateway hizmeti.
+Güncelleniyor...
