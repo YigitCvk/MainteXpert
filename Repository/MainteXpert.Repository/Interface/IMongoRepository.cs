@@ -4,6 +4,7 @@
     {
         string GetUserId();
         IMongoCollection<TDocument> GetCollection();
+        Task<List<TDocument>> GetAll();
         Task<TDocument> SoftDeleteByIdAsync(string id);
         Task HardDeleteByIdAsync(string id);
         IEnumerable<TDocument> FindAllWithProjection(FilterDefinition<TDocument> filterDefinition, FindOptions<TDocument> projection);

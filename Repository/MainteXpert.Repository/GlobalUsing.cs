@@ -15,3 +15,4 @@ global using MainteXpert.Common.Models.Pagination;
 global using MongoDB.Bson.Serialization.Attributes;
 global using MainteXpert.Common.Models.Lookup.StationCollectionModels;
 global using MainteXpert.Common.Models.ErrorCard;
+global using MainteXpert.Repository.Document;

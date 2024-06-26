@@ -1,6 +1,4 @@
-﻿using MainteXpert.Repository.Document;
-
-namespace MainteXpert.MaintenanceSchedule.Application.Models
+﻿namespace MainteXpert.MaintenanceSchedule.Application.Models
 {
     [BsonCollection("MaintenanceTaskCollection")]
     public class MaintenanceTaskCollection : Document

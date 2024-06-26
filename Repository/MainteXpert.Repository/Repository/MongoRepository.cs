@@ -124,13 +124,14 @@
 
             return paged;
         }
-
-
         public virtual IMongoCollection<TDocument> GetCollection()
         {
             return _collection;
         }
-
+        public async Task<List<TDocument>> GetAll()
+        {
+            return await _collection.Find(Builders<TDocument>.Filter.Empty).ToListAsync();
+        }
         public virtual async Task<long> CountDocumentsAsync(FilterDefinition<TDocument> filterDefinition)
         {
             return await _collection.CountDocumentsAsync(filterDefinition);
