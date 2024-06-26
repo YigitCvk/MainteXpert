@@ -53,7 +53,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MaintenanceScheduleService"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.MaintenanceSchedule.Application", "Services\MaintenanceScheduleService\MainteXpert.MaintenanceSchedule.Application\MainteXpert.MaintenanceSchedule.Application.csproj", "{09404BA0-210E-47CD-B3B9-1D3C35F60194}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.MaintenanceScheduleService.API", "Services\MaintenanceScheduleService\MainteXpert.MaintenanceScheduleService.API\MainteXpert.MaintenanceScheduleService.API.csproj", "{EF02E4D5-E045-4F4D-96D2-93B5256DD492}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.MaintenanceScheduleService.API", "Services\MaintenanceScheduleService\MainteXpert.MaintenanceScheduleService.API\MainteXpert.MaintenanceScheduleService.API.csproj", "{EF02E4D5-E045-4F4D-96D2-93B5256DD492}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EquipmentService", "EquipmentService", "{D448202F-917F-4713-81EB-C2E846821BB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaineXpert.EquipmentService.Application", "Services\MainteXpert.EquipmentService\MaineXpert.EquipmentService.Application\MaineXpert.EquipmentService.Application.csproj", "{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +125,10 @@ Global
 		{EF02E4D5-E045-4F4D-96D2-93B5256DD492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF02E4D5-E045-4F4D-96D2-93B5256DD492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF02E4D5-E045-4F4D-96D2-93B5256DD492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +154,8 @@ Global
 		{C23C4561-CED4-4873-AE64-CDF27376F6DC} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
 		{09404BA0-210E-47CD-B3B9-1D3C35F60194} = {C23C4561-CED4-4873-AE64-CDF27376F6DC}
 		{EF02E4D5-E045-4F4D-96D2-93B5256DD492} = {C23C4561-CED4-4873-AE64-CDF27376F6DC}
+		{D448202F-917F-4713-81EB-C2E846821BB5} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
+		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4} = {D448202F-917F-4713-81EB-C2E846821BB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2DED1DD-27C1-41FE-B5B1-7AC3D3A095A4}
