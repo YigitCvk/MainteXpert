@@ -61,9 +61,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaineXpert.EquipmentService
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaigoService", "TaigoService", "{00546418-2A87-46FA-8A80-74B64F914E1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.Taiga.Application", "Services\MainteXpert.Taiga\MainteXpert.Taiga.Application\MainteXpert.Taiga.Application.csproj", "{D35A6EFC-2364-42DD-8B35-026B0775E6EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.Taiga.Application", "Services\MainteXpert.Taiga\MainteXpert.Taiga.Application\MainteXpert.Taiga.Application.csproj", "{D35A6EFC-2364-42DD-8B35-026B0775E6EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.TaigoService.Api", "Services\MainteXpert.Taiga\MainteXpert.TaigoService.Api\MainteXpert.TaigoService.Api.csproj", "{B17101DD-71CA-4BAD-B33F-4D7BD42F51B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.TaigaService.Api", "Services\MainteXpert.Taiga\MainteXpert.TaigoService.Api\MainteXpert.TaigaService.Api.csproj", "{B17101DD-71CA-4BAD-B33F-4D7BD42F51B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿namespace MainteXpert.TaigoService.Api.Controllers
+﻿namespace MainteXpert.TaigaService.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
