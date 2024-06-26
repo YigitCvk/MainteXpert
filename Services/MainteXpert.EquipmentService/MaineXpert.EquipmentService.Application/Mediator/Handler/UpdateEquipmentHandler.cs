@@ -1,19 +1,13 @@
-﻿using MaineXpert.EquipmentService.Application.Mediator.Commands;
-using MainteXpert.MaintenanceSchedule.Application.Models;
-using MongoDB.Driver;
-
-namespace MaineXpert.EquipmentService.Application.Mediator.Handler
+﻿namespace MaineXpert.EquipmentService.Application.Mediator.Handler
 {
     public class UpdateEquipmentHandler : IRequestHandler<UpdateEquipmentCommand, ResponseModel<EquipmentModel>>
     {
         private readonly IMongoRepository<EquipmentCollection> _collection;
-        private readonly IMediator _mediator;
         private readonly IMapper _mapper;
 
-        public UpdateEquipmentHandler(IMongoRepository<EquipmentCollection> collection, IMediator mediator, IMapper mapper)
+        public UpdateEquipmentHandler(IMongoRepository<EquipmentCollection> collection, IMapper mapper)
         {
             _collection = collection;
-            _mediator = mediator;
             _mapper = mapper;
         }
 

@@ -12,3 +12,6 @@ global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 global using Serilog;
 global using System.Reflection;
+global using MaineXpert.EquipmentService.Application.Mediator.Commands;
+global using MongoDB.Driver;
+
