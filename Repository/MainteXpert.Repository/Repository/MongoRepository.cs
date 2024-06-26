@@ -31,7 +31,11 @@
 
 
         }
-
+        public async Task<TDocument> FindOneAndUpdateAsync(FilterDefinition<TDocument> filter, UpdateDefinition<TDocument> update)
+        {
+            var options = new FindOneAndUpdateOptions<TDocument> { ReturnDocument = ReturnDocument.After };
+            return await _collection.FindOneAndUpdateAsync(filter, update, options);
+        }
         private protected string GetCollectionName(Type documentType)
         {
             string nameCollection = ((BsonCollectionAttribute)documentType.GetCustomAttributes(

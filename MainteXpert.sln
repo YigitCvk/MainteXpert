@@ -57,7 +57,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.MaintenanceSche
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EquipmentService", "EquipmentService", "{D448202F-917F-4713-81EB-C2E846821BB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaineXpert.EquipmentService.Application", "Services\MainteXpert.EquipmentService\MaineXpert.EquipmentService.Application\MaineXpert.EquipmentService.Application.csproj", "{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaineXpert.EquipmentService.Application", "Services\MainteXpert.EquipmentService\MaineXpert.EquipmentService.Application\MaineXpert.EquipmentService.Application.csproj", "{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaigoService", "TaigoService", "{00546418-2A87-46FA-8A80-74B64F914E1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.Taiga.Application", "Services\MainteXpert.Taiga\MainteXpert.Taiga.Application\MainteXpert.Taiga.Application.csproj", "{D35A6EFC-2364-42DD-8B35-026B0775E6EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.TaigoService.Api", "Services\MainteXpert.Taiga\MainteXpert.TaigoService.Api\MainteXpert.TaigoService.Api.csproj", "{B17101DD-71CA-4BAD-B33F-4D7BD42F51B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +135,14 @@ Global
 		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35A6EFC-2364-42DD-8B35-026B0775E6EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35A6EFC-2364-42DD-8B35-026B0775E6EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35A6EFC-2364-42DD-8B35-026B0775E6EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35A6EFC-2364-42DD-8B35-026B0775E6EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17101DD-71CA-4BAD-B33F-4D7BD42F51B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17101DD-71CA-4BAD-B33F-4D7BD42F51B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17101DD-71CA-4BAD-B33F-4D7BD42F51B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17101DD-71CA-4BAD-B33F-4D7BD42F51B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -156,6 +170,9 @@ Global
 		{EF02E4D5-E045-4F4D-96D2-93B5256DD492} = {C23C4561-CED4-4873-AE64-CDF27376F6DC}
 		{D448202F-917F-4713-81EB-C2E846821BB5} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
 		{9396EF3A-BF53-416C-A3C6-647AAAF5A4D4} = {D448202F-917F-4713-81EB-C2E846821BB5}
+		{00546418-2A87-46FA-8A80-74B64F914E1A} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
+		{D35A6EFC-2364-42DD-8B35-026B0775E6EE} = {00546418-2A87-46FA-8A80-74B64F914E1A}
+		{B17101DD-71CA-4BAD-B33F-4D7BD42F51B1} = {00546418-2A87-46FA-8A80-74B64F914E1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2DED1DD-27C1-41FE-B5B1-7AC3D3A095A4}

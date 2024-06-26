@@ -14,4 +14,7 @@ global using Serilog;
 global using System.Reflection;
 global using MaineXpert.EquipmentService.Application.Mediator.Commands;
 global using MongoDB.Driver;
+global using Microsoft.Extensions.Logging;
+global using Newtonsoft.Json;
+global using System.Diagnostics;
 

@@ -4,6 +4,9 @@
     {
         string GetUserId();
         IMongoCollection<TDocument> GetCollection();
+
+        Task<TDocument> FindOneAndUpdateAsync(FilterDefinition<TDocument> filter, UpdateDefinition<TDocument> update);
+
         Task<List<TDocument>> GetAll();
         Task<TDocument> SoftDeleteByIdAsync(string id);
         Task HardDeleteByIdAsync(string id);
