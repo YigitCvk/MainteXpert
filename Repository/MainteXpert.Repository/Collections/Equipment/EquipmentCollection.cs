@@ -11,5 +11,6 @@
         public string Description { get; set; }
         public DateTime PurchaseDate { get; set; }
         public string Status { get; set; }
+        public int StockQuantity { get; set; }
     }
 }

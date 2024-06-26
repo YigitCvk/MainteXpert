@@ -1,4 +1,4 @@
-﻿namespace MaineXpert.EquipmentService.Application.Mediator.Handler
+﻿namespace MainteXpert.EquipmentService.Application.Mediator.Handler
 {
     public class GetEquipmentByIdHandler : IRequestHandler<GetEquipmentByIdQuery, ResponseModel<EquipmentModel>>
     {

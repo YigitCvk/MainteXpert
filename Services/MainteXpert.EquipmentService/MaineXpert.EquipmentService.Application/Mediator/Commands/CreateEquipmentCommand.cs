@@ -1,4 +1,5 @@
-﻿namespace MaineXpert.EquipmentService.Application.Mediator.Commands
+﻿
+namespace MainteXpert.EquipmentService.Application.Mediator.Commands
 {
     public class CreateEquipmentCommand : IRequest<ResponseModel<EquipmentModel>>
     {

@@ -1,4 +1,4 @@
-﻿namespace MaineXpert.EquipmentService.Application.Models
+﻿namespace MainteXpert.EquipmentService.Application.Models
 {
     public class EquipmentModel : BaseResponseModel
     {
