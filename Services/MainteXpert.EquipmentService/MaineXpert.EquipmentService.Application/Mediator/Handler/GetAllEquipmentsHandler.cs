@@ -1,5 +1,4 @@
-﻿
-namespace MaineXpert.EquipmentService.Application.Mediator.Handler
+﻿namespace MainteXpert.EquipmentService.Application.Mediator.Handler
 {
     public class GetAllEquipmentsHandler : IRequestHandler<GetAllEquipmentsQuery, ResponseModel<List<EquipmentModel>>>
     {

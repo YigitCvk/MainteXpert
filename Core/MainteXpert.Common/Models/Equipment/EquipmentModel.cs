@@ -1,6 +1,6 @@
 ﻿namespace MainteXpert.Common.Models.Equipment
 {
-    public class EquipmentModel
+    public class EquipmentModel : BaseResponseModel
     {
         public string Id { get; set; }
         public string Name { get; set; }

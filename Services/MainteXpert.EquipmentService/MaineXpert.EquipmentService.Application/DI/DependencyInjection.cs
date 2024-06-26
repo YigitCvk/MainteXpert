@@ -1,4 +1,4 @@
-﻿namespace MaineXpert.EquipmentService.Application.DI
+﻿namespace MainteXpert.EquipmentService.Application.DI
 {
     public static class DependencyInjection
     {

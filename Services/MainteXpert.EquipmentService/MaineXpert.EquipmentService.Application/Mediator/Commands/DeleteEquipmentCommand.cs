@@ -1,7 +1,12 @@
-﻿namespace MaineXpert.EquipmentService.Application.Mediator.Commands
+﻿namespace MainteXpert.EquipmentService.Application.Mediator.Commands
 {
     public class DeleteEquipmentCommand : IRequest<ResponseModel<bool>>
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
+
+        public DeleteEquipmentCommand(int id)
+        {
+            Id = id;
+        }
     }
 }

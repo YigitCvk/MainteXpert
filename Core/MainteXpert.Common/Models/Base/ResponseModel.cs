@@ -10,7 +10,6 @@
         public int TotalCount { get; set; }
         public List<string> Errors { get; set; }
 
-
         public ResponseModel(T Data)
         {
             this.Data = Data;
@@ -19,8 +18,8 @@
         {
             this.Datas = data;
         }
-      
-        public ResponseModel(T data, string message)
+
+        public ResponseModel(T data, string message = null)
         {
             Data = data;
             Message = message;
