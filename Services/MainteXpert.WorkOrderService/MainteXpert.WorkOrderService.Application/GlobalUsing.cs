@@ -11,8 +11,10 @@ global using MainteXpert.WorkOrderService.Application.Mediator.Queries;
 global using MediatR;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
+global using MongoDB.Driver;
 global using Serilog;
 global using System.Reflection;
+
 
 
 

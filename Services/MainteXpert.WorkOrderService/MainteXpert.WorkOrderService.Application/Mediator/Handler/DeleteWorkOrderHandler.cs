@@ -1,4 +1,7 @@
-﻿namespace MainteXpert.WorkOrderService.Application.Mediator.Handler
+﻿using MainteXpert.MaintenanceSchedule.Application.Models;
+using MongoDB.Driver;
+
+namespace MainteXpert.WorkOrderService.Application.Mediator.Handler
 {
     public class DeleteWorkOrderHandler : IRequestHandler<DeleteWorkOrderCommand, ResponseModel<bool>>
     {
@@ -13,12 +16,14 @@
 
         async Task<ResponseModel<bool>> IRequestHandler<DeleteWorkOrderCommand, ResponseModel<bool>>.Handle(DeleteWorkOrderCommand request, CancellationToken cancellationToken)
         {
-            var workOrder = await _collection.FindByIdAsync(request.Id);
-            if (workOrder == null)
+            var filter = Builders<WorkOrderCollection>.Filter.Eq(task => task.Id, request.Id);
+            var result = await _collection.GetCollection().DeleteOneAsync(filter, cancellationToken);
+
+            if (result.DeletedCount == 0)
             {
-                return new ResponseModel<bool>(false, "Work Order not found");
+                return new ResponseModel<bool>(false, "Task not found");
             }
-            await _collection.DeleteByIdAsync(request.Id);
+
             return new ResponseModel<bool>(true);
         }
     }

@@ -1,5 +1,4 @@
-﻿
-namespace MainteXpert.WorkOrderService.Application.DI
+﻿namespace MainteXpert.WorkOrderService.Application.DI
 {
     public static class DependencyInjection
     {
@@ -9,7 +8,6 @@ namespace MainteXpert.WorkOrderService.Application.DI
             services.AddValidatorsFromAssembly(assembly);
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
             services.AddAutoMapper(assembly);
-
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
 
             #region Configure Mapper
@@ -19,19 +17,18 @@ namespace MainteXpert.WorkOrderService.Application.DI
                 cfg.AddProfile<AutoMapperMappingProfile>();
             });
             var mapper = config.CreateMapper();
-            services.AddSingleton(mapper);
             #endregion
-
             return services;
         }
 
-        public static IServiceCollection AddLoggingConfigration(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddLoggingConfigration(this IServiceCollection services, IConfiguration configration)
         {
             var logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(configuration)
+                .ReadFrom.Configuration(configration)
                 .CreateLogger();
 
             services.AddLogging(l => l.AddSerilog(logger));
+
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
 
             return services;

@@ -10,6 +10,7 @@ public static class Config
         new ApiResource("resource_user", "User API"){Scopes={"user_fullpermission"}},
         new ApiResource("resource_activity", "Activity API"){Scopes={"activity_fullpermission"}},
         new ApiResource("resource_errorcard", "ErrorCard API"){Scopes={"errorcard_fullpermission"}},
+        new ApiResource("resource_workorder", "ErrorCard API"){Scopes={"workorder_fullpermission"}},
         new ApiResource("resource_lookup", "Lookup API"){Scopes={"lookup_fullpermission"}},
         new ApiResource("resource_report", "Report API"){Scopes={"report_fullpermission"}},
         new ApiResource("resource_maintenance", "Report API"){Scopes={"maintenance_fullpermission"}},
@@ -36,6 +37,7 @@ public static class Config
         new ApiScope[]
         {
             new ApiScope("errorcard_fullpermission", "ErrorCard API için full erişim"),
+            new ApiScope("workorder_fullpermission", "WorkOrder API için full erişim"),
             new ApiScope("activity_fullpermission", "Activity API için full erişim"),
             new ApiScope("report_fullpermission", "Report API için full erişim"),
             new ApiScope("user_fullpermission", "User API için full erişim"),
@@ -62,6 +64,7 @@ public static class Config
                     "report_fullpermission",
                     "user_fullpermission",
                     "maintenance_fullpermission",
+                    "workorder_fullpermission",
                     "gateway_fullpermission",
                     IdentityServerConstants.LocalApi.ScopeName
                 }
@@ -81,6 +84,7 @@ public static class Config
                     "report_fullpermission",
                     "user_fullpermission",
                     "maintenance_fullpermission",
+                    "workorder_fullpermission",
                     "gateway_fullpermission",
                     IdentityServerConstants.StandardScopes.Email,
                     IdentityServerConstants.StandardScopes.OpenId,
@@ -108,6 +112,7 @@ public static class Config
                     "report_fullpermission",
                     "user_fullpermission",
                     "maintenance_fullpermission",
+                    "workorder_fullpermission",
                     "payment_fullpermission",
                     IdentityServerConstants.StandardScopes.OpenId
                 }

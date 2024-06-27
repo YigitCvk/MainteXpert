@@ -14,13 +14,16 @@ namespace MainteXpert.WorkOrderService.Application.Mediator.Handler
 
         public async Task<ResponseModel<WorkOrderModel>> Handle(GetWorkOrderByIdQuery request, CancellationToken cancellationToken)
         {
-            var workOrder = await _collection.FindByIdAsync(request.Id);
-            if (workOrder == null)
+            var filter = Builders<WorkOrderCollection>.Filter.Eq(task => task.Id, request.Id);
+            var maintenanceTask = await _collection.GetCollection().Find(filter).FirstOrDefaultAsync(cancellationToken);
+
+            if (maintenanceTask == null)
             {
-                return new ResponseModel<WorkOrderModel>(null,"Work Order not found");
+                return new ResponseModel<WorkOrderModel>(null, "Task not found");
             }
-            var workOrderModel = _mapper.Map<WorkOrderModel>(workOrder);
-            return new ResponseModel<WorkOrderModel> ( workOrderModel );
+
+            var maintenanceTaskModel = _mapper.Map<WorkOrderModel>(maintenanceTask);
+            return new ResponseModel<WorkOrderModel>(maintenanceTaskModel);
         }
     }
 }
