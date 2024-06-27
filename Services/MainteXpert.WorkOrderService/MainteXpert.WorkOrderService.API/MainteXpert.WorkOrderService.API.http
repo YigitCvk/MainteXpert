@@ -1,0 +1,6 @@
+@MainteXpert.WorkOrderService.API_HostAddress = http://localhost:5086
+
+GET {{MainteXpert.WorkOrderService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

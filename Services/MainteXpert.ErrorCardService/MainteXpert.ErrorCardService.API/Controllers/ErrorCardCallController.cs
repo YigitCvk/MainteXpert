@@ -1,6 +1,5 @@
 ﻿namespace MainteXpert.ErrorCardService.API.Controllers
 {
-
     [ApiController]
     [Route("api/[controller]/[action]")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
