@@ -2,17 +2,23 @@
 {
     public class CreateWorkOrderCommand : IRequest<ResponseModel<WorkOrderModel>>
     {
-        public string Name { get; set; }
+        public string Id { get; set; }
+        public string Title { get; set; }
         public string Description { get; set; }
+        public DateTime CreatedDate { get; set; }
         public DateTime DueDate { get; set; }
-        public string Status { get; set; }
+        public string Status { get; set; } // Created, In Progress, Completed, etc.
+        public string AssignedTo { get; set; } // User ID
 
-        public CreateWorkOrderCommand(string name, string description, DateTime dueDate, string status)
+        public CreateWorkOrderCommand(string id, string title, string description, DateTime createdDate, DateTime dueDate, string status, string assignedTo)
         {
-            Name = name;
+            Id = id;
+            Title = title;
             Description = description;
+            CreatedDate = createdDate;
             DueDate = dueDate;
             Status = status;
+            AssignedTo = assignedTo;
         }
     }
 }

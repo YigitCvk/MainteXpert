@@ -17,7 +17,9 @@ namespace MainteXpert.WorkOrderService.Application.Mediator.Handler
         {
             var workOrder = new WorkOrderCollection
             {
-                Name = request.Name,
+                AssignedTo = request.AssignedTo,
+                Title = request.Title,
+                CreatedById = request.Id,
                 Description = request.Description,
                 DueDate = request.DueDate,
                 Status = request.Status,

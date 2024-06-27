@@ -24,6 +24,7 @@
     <ProjectReference Include="..\..\Core\MainteXpert.Common\MainteXpert.Common.csproj" />
     <ProjectReference Include="..\..\Core\MainteXpert.Helper\MainteXpert.Helper.csproj" />
     <ProjectReference Include="..\..\Repository\MainteXpert.Repository\MainteXpert.Repository.csproj" />
+    <ProjectReference Include="..\MainteXpert.MessagingService\MainteXpert.MessagingService.csproj" />
     <ProjectReference Include="..\MainteXpert.UserService\MainteXpert.UserService.Application\MainteXpert.UserService.Application.csproj" />
   </ItemGroup>
 </Project>

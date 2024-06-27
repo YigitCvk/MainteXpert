@@ -18,7 +18,7 @@ namespace MainteXpert.WorkOrderService.Application.Mediator.Handler
         {
             var filter = Builders<WorkOrderCollection>.Filter.Eq(task => task.Id, request.Id);
             var update = Builders<WorkOrderCollection>.Update
-                .Set(task => task.Name, request.Name)
+                .Set(task => task.Title, request.Title)
                 .Set(task => task.Description, request.Description)                
                 .Set(task => task.Status, request.Status);
 

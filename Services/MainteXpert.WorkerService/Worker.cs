@@ -1,3 +1,5 @@
+using MainteXpert.MessagingService.Producer;
+
 namespace MainteXpert.WorkerService
 {
     public class Worker : BackgroundService
