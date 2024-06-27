@@ -1,0 +1,6 @@
+@MainteXpert.ReportService.API_HostAddress = http://localhost:5004
+
+GET {{MainteXpert.ReportService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

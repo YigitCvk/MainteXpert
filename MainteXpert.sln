@@ -73,6 +73,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.WorkOrderServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.WorkOrderService.API", "Services\MainteXpert.WorkOrderService\MainteXpert.WorkOrderService.API\MainteXpert.WorkOrderService.API.csproj", "{9CE2FF42-9864-4B83-9648-A94C1A7EBC55}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportService", "ReportService", "{F3D73C13-55F8-4E36-B47D-399F1B36D5C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.ReportService.Application", "Services\MainteXpert.ReportService\MainteXpert.ReportService.Application\MainteXpert.ReportService.Application.csproj", "{B740D657-3DB8-46D1-9EA6-01AF21C44AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.ReportService.API", "Services\MainteXpert.ReportService\MainteXpert.ReportService.API\MainteXpert.ReportService.API.csproj", "{EB8AD9F7-A648-460B-AC9C-BC4F59B2AB18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +169,14 @@ Global
 		{9CE2FF42-9864-4B83-9648-A94C1A7EBC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE2FF42-9864-4B83-9648-A94C1A7EBC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE2FF42-9864-4B83-9648-A94C1A7EBC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B740D657-3DB8-46D1-9EA6-01AF21C44AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B740D657-3DB8-46D1-9EA6-01AF21C44AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B740D657-3DB8-46D1-9EA6-01AF21C44AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B740D657-3DB8-46D1-9EA6-01AF21C44AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8AD9F7-A648-460B-AC9C-BC4F59B2AB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8AD9F7-A648-460B-AC9C-BC4F59B2AB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8AD9F7-A648-460B-AC9C-BC4F59B2AB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8AD9F7-A648-460B-AC9C-BC4F59B2AB18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,6 +211,9 @@ Global
 		{6C60A1DB-5B43-43F2-85FC-680D5AECADD1} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
 		{6E5D00BC-3B99-48D5-B16F-8E42F24ED362} = {6C60A1DB-5B43-43F2-85FC-680D5AECADD1}
 		{9CE2FF42-9864-4B83-9648-A94C1A7EBC55} = {6C60A1DB-5B43-43F2-85FC-680D5AECADD1}
+		{F3D73C13-55F8-4E36-B47D-399F1B36D5C6} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
+		{B740D657-3DB8-46D1-9EA6-01AF21C44AA2} = {F3D73C13-55F8-4E36-B47D-399F1B36D5C6}
+		{EB8AD9F7-A648-460B-AC9C-BC4F59B2AB18} = {F3D73C13-55F8-4E36-B47D-399F1B36D5C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2DED1DD-27C1-41FE-B5B1-7AC3D3A095A4}
