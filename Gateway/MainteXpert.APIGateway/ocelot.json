@@ -12,12 +12,12 @@
       "UpstreamPathTemplate": "/auth/{everything}",
       "UpstreamHttpMethod": [ "POST", "GET" ],
       "AuthenticationOptions": {
-        "AuthenticationProviderKey": "oidc",
+        "AuthenticationProviderKey": "IdentityApiKey",
         "AllowedScopes": []
       }
     },
     {
-      "Servicename": "UserService",
+      "ServiceName": "UserService",
       "DownstreamPathTemplate": "/{url}",
       "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/{url}",
@@ -31,10 +31,14 @@
         "ExceptionsAllowedBeforeBreaking": 3,
         "DurationOfBreak": 5000,
         "TimeoutValue": 2000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": [ "user_fullpermission" ]
       }
     },
     {
-      "Servicename": "MaintenanceScheduleService",
+      "ServiceName": "MaintenanceScheduleService",
       "DownstreamPathTemplate": "/api/maintenancetasks/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -54,6 +58,10 @@
         "ExceptionsAllowedBeforeBreaking": 3,
         "DurationOfBreak": 5000,
         "TimeoutValue": 2000
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": [ "maintenance_fullpermission" ]
       }
     }
   ],
@@ -61,7 +69,7 @@
     "RequestIdKey": "OcRequestId",
     "UseServiceDiscovery": true,
     "ServiceDiscoveryProvider": {
-      "Host": "consul",
+      "Host": "localhost", // Consul Host
       "Port": 8500,
       "Type": "PollConsul",
       "PollingInterval": 100

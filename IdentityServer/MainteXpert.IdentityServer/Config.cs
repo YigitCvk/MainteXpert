@@ -112,8 +112,7 @@ public static class Config
                     "report_fullpermission",
                     "user_fullpermission",
                     "maintenance_fullpermission",
-                    "workorder_fullpermission",
-                    "payment_fullpermission",
+                    "workorder_fullpermission",                    
                     IdentityServerConstants.StandardScopes.OpenId
                 }
             },
