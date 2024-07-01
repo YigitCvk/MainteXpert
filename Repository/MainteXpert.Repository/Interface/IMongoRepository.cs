@@ -58,5 +58,6 @@
         void DeleteMany(Expression<Func<TDocument, bool>> filterExpression);
         Task DeleteManyAsync(Expression<Func<TDocument, bool>> filterExpression);
         Task<TResult> InTransactionAsync<TResult>(Func<Task<TResult>> action, Action successAction = null, Action<Exception> exceptionAction = null);
+
     }
 }

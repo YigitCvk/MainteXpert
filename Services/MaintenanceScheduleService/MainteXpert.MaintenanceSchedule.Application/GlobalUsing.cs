@@ -13,4 +13,4 @@ global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 global using Serilog;
 global using System.Reflection;
-
+global using MainteXpert.MaintenanceSchedule.Application.Models;

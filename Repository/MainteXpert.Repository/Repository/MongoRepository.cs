@@ -1,4 +1,6 @@
-﻿namespace MainteXpert.Repository.Repository
+﻿using MongoDB.Driver;
+
+namespace MainteXpert.Repository.Repository
 {
 
     public class MongoRepository<TDocument> : IMongoRepository<TDocument> where TDocument : IDocument
@@ -504,6 +506,16 @@
         public string GetUserId()
         {
             return this._httpContextAccessor.HttpContext?.User?.Identity?.Name;
+        }
+
+        public async Task<TDocument> FindWithProjection(FilterDefinition<TDocument> filterDefinition, ProjectionDefinition<TDocument> projection)
+        {
+            return await _collection.Find(filterDefinition).Project<TDocument>(projection).FirstOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<TDocument>> FindAllWithProjection(FilterDefinition<TDocument> filterDefinition, ProjectionDefinition<TDocument> projection)
+        {
+            return await _collection.Find(filterDefinition).Project<TDocument>(projection).ToListAsync();
         }
     }
 }
