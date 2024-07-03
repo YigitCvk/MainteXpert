@@ -1,6 +1,4 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
-
-namespace MainteXpert.Repository.Document
+﻿namespace MainteXpert.Repository.Document
 {
     public class Document : IDocument
     {

@@ -87,6 +87,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.InventortServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.InventortService.API", "Services\MainteXpert.InventoryService\MainteXpert.InventortService.API\MainteXpert.InventortService.API.csproj", "{BC3780E4-9A7C-4DAE-9133-FD24F3D269EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KaizenService", "KaizenService", "{D0ADDFC5-7B36-498E-9D33-85381209B037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.KaizenService.Application", "Services\MainteXpert.KaizenService\MainteXpert.KaizenService.Application\MainteXpert.KaizenService.Application.csproj", "{FA734723-0D98-49B3-BE3A-8DB716952E7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -193,6 +197,10 @@ Global
 		{BC3780E4-9A7C-4DAE-9133-FD24F3D269EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC3780E4-9A7C-4DAE-9133-FD24F3D269EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC3780E4-9A7C-4DAE-9133-FD24F3D269EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA734723-0D98-49B3-BE3A-8DB716952E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA734723-0D98-49B3-BE3A-8DB716952E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA734723-0D98-49B3-BE3A-8DB716952E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA734723-0D98-49B3-BE3A-8DB716952E7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -233,6 +241,8 @@ Global
 		{220DB5EC-699E-4AB8-B9A6-DE98174FB3EA} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
 		{CC05647E-8DFA-4E28-9882-E0E44D51592A} = {220DB5EC-699E-4AB8-B9A6-DE98174FB3EA}
 		{BC3780E4-9A7C-4DAE-9133-FD24F3D269EF} = {220DB5EC-699E-4AB8-B9A6-DE98174FB3EA}
+		{D0ADDFC5-7B36-498E-9D33-85381209B037} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
+		{FA734723-0D98-49B3-BE3A-8DB716952E7C} = {D0ADDFC5-7B36-498E-9D33-85381209B037}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2DED1DD-27C1-41FE-B5B1-7AC3D3A095A4}
