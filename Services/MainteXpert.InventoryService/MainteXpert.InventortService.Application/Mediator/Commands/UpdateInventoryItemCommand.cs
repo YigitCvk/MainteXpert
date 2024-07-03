@@ -1,4 +1,4 @@
-﻿namespace MainteXpert.InventoryService.Application.Mediator.Commands
+﻿namespace MainteXpert.InventortService.Application.Mediator.Commands
 {
     public class UpdateInventoryItemCommand : IRequest<ResponseModel<InventoryItemModel>>
     {

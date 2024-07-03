@@ -1,4 +1,4 @@
-﻿namespace MainteXpert.InventoryService.Application.Mediator.Queries
+﻿namespace MainteXpert.InventortService.Application.Mediator.Queries
 {
     public class GetInventoryItemByIdQuery : IRequest<ResponseModel<InventoryItemModel>>
     {

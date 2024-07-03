@@ -30,3 +30,5 @@ global using MongoDB.Driver;
 global using Serilog;
 global using System.Reflection;
 global using System.Text;
+global using MainteXpert.Common.Enums;
+

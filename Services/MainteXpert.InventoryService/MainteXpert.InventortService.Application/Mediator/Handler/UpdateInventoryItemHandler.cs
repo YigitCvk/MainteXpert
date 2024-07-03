@@ -1,14 +1,14 @@
-﻿namespace MainteXpert.InventoryService.Application.Mediator.Handler
+﻿namespace MainteXpert.InventortService.Application.Mediator.Handler
 {
     public class UpdateInventoryItemHandler : IRequestHandler<UpdateInventoryItemCommand, ResponseModel<InventoryItemModel>>
     {
-        private readonly IMongoRepository<InventoryItemCollection> _collection;
         private readonly IMapper _mapper;
+        private readonly IMongoRepository<InventoryItemCollection> _repository;
 
-        public UpdateInventoryItemHandler(IMongoRepository<InventoryItemCollection> collection, IMapper mapper)
+        public UpdateInventoryItemHandler(IMapper mapper, IMongoRepository<InventoryItemCollection> repository)
         {
-            _collection = collection;
             _mapper = mapper;
+            _repository = repository;
         }
 
         public async Task<ResponseModel<InventoryItemModel>> Handle(UpdateInventoryItemCommand request, CancellationToken cancellationToken)
@@ -20,7 +20,7 @@
                 .Set(p => p.Quantity, request.Quantity)
                 .Set(p => p.Price, request.Price);
 
-            var result = await _collection.FindOneAndUpdateAsync(filter, update);
+            var result = await _repository.FindOneAndUpdateAsync(filter, update);
             if (result == null)
             {
                 return new ResponseModel<InventoryItemModel>(null, "Item not found");

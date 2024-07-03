@@ -1,4 +1,6 @@
-﻿namespace MainteXpert.Repository.Interface
+﻿using MainteXpert.Repository.Collections.Inventory;
+
+namespace MainteXpert.Repository.Interface
 {
     public interface IMongoRepository<TDocument> where TDocument : IDocument
     {
@@ -58,6 +60,6 @@
         void DeleteMany(Expression<Func<TDocument, bool>> filterExpression);
         Task DeleteManyAsync(Expression<Func<TDocument, bool>> filterExpression);
         Task<TResult> InTransactionAsync<TResult>(Func<Task<TResult>> action, Action successAction = null, Action<Exception> exceptionAction = null);
-
+        /*Task FindWithProjection(FilterDefinition<InventoryItemCollection> filter, ProjectionDefinition<InventoryItemCollection> projection);*/
     }
 }

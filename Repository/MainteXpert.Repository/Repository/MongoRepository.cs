@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MainteXpert.Repository.Collections.Inventory;
+using MongoDB.Driver;
 
 namespace MainteXpert.Repository.Repository
 {
@@ -516,6 +517,16 @@ namespace MainteXpert.Repository.Repository
         public async Task<IEnumerable<TDocument>> FindAllWithProjection(FilterDefinition<TDocument> filterDefinition, ProjectionDefinition<TDocument> projection)
         {
             return await _collection.Find(filterDefinition).Project<TDocument>(projection).ToListAsync();
+        }
+
+        public async Task<TDocument> FindWithProjections(FilterDefinition<TDocument> filter, ProjectionDefinition<TDocument> projection)
+        {
+            return await _collection.Find(filter).Project<TDocument>(projection).FirstOrDefaultAsync();
+        }
+
+        public async Task<IEnumerable<TDocument>> FindAllWithProjections(FilterDefinition<TDocument> filter, ProjectionDefinition<TDocument> projection)
+        {
+            return await _collection.Find(filter).Project<TDocument>(projection).ToListAsync();
         }
     }
 }

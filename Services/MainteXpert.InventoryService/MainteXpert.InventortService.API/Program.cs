@@ -1,12 +1,10 @@
 ﻿
+
+using MainteXpert.Middleware.Exceptions;
+
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
-
 // Add services to the container.
-builder.Services.AddControllers();
-
-// Correct AddMediatR configuration
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetAllMaintenanceTaskHandler).Assembly));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
@@ -20,16 +18,17 @@ builder.Services.AddSingleton<IMongoDbSettings>(sp =>
 
 builder.Services.AddSingleton<IMongoClient>(s =>
     new MongoClient(builder.Configuration.GetValue<string>("MongoDbSettings:ConnectionString")));
-
+builder.Services.AddControllers();
 // Add IHttpContextAccessor
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "MainteXpert.MaintenanceScheduleService",
+        Title = "MainteXpert.InventoryService",
         Version = "v1",
         Contact = new OpenApiContact
         {
@@ -63,15 +62,11 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-builder.Logging.ClearProviders(); // Standart logging yapılandırması
-builder.Logging.AddConsole(); // Konsol loglarını ekler
-
-builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
     options.Authority = configuration["IdentityServerURL"];
-    options.Audience = "resource_maintenance";
+    options.Audience = "resource_inventory";
     options.RequireHttpsMetadata = false;
 });
 
@@ -80,18 +75,15 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("NormalPolicy", policy =>
     {
         policy.RequireAuthenticatedUser();
-        policy.RequireClaim("scope", "maintenance_fullpermission");
+        policy.RequireClaim("scope", "inventory_fullpermission");
     });
 });
-
-builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
-builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
-
-builder.Services.AddCors();
-
+builder.Logging.ClearProviders(); // Standart logging yapılandırması
+builder.Logging.AddConsole(); // Konsol loglarını ekler
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

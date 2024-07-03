@@ -1,4 +1,4 @@
-﻿namespace MainteXpert.InventoryService.Application.DI
+﻿namespace MainteXpert.InventortService.Application.DI
 {
     public static class DependencyInjection
     {
@@ -23,7 +23,6 @@
 
         public static IServiceCollection AddLoggingConfigration(this IServiceCollection services, IConfiguration configration)
         {
-
             var logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(configration)
                 .CreateLogger();

@@ -14,5 +14,7 @@
         [Display(Name = "Silindi", Description = "Silindi")]
         Deleted = 3,
 
+        [Display(Name = "Bilinmeyen", Description = "Bilinmeyen")]
+        Unknown = 4,
     }
 }

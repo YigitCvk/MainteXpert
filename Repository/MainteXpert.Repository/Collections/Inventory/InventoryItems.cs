@@ -1,4 +1,4 @@
-﻿namespace MainteXpert.Repository.Collections
+﻿namespace MainteXpert.Repository.Collections.Inventory
 {
     [BsonCollection("InventoryItems")]
     public class InventoryItemCollection : Document.Document

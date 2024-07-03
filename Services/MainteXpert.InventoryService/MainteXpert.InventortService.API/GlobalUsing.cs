@@ -1,0 +1,11 @@
+﻿global using MainteXpert.InventortService.Application.Mediator.Commands;
+global using MainteXpert.InventortService.Application.Mediator.Queries;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using MainteXpert.Repository.Configration;
+global using MainteXpert.Repository.Interface;
+global using MainteXpert.Repository.Repository;
+global using Microsoft.Extensions.Options;
+global using MongoDB.Driver;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.OpenApi.Models;
