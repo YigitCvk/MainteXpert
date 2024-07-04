@@ -4,7 +4,7 @@
     {
         public AutoMapperMappingProfile()
         {
-
+            CreateMap<KaizenImprovementCollection, KaizenImprovementModel>().ReverseMap();
         }
     }
 }

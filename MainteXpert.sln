@@ -83,13 +83,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{00
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InventoryService", "InventoryService", "{220DB5EC-699E-4AB8-B9A6-DE98174FB3EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.InventortService.Application", "Services\MainteXpert.InventoryService\MainteXpert.InventortService.Application\MainteXpert.InventortService.Application.csproj", "{CC05647E-8DFA-4E28-9882-E0E44D51592A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.InventortService.Application", "Services\MainteXpert.InventoryService\MainteXpert.InventortService.Application\MainteXpert.InventortService.Application.csproj", "{CC05647E-8DFA-4E28-9882-E0E44D51592A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.InventortService.API", "Services\MainteXpert.InventoryService\MainteXpert.InventortService.API\MainteXpert.InventortService.API.csproj", "{BC3780E4-9A7C-4DAE-9133-FD24F3D269EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.InventortService.API", "Services\MainteXpert.InventoryService\MainteXpert.InventortService.API\MainteXpert.InventortService.API.csproj", "{BC3780E4-9A7C-4DAE-9133-FD24F3D269EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KaizenService", "KaizenService", "{D0ADDFC5-7B36-498E-9D33-85381209B037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.KaizenService.Application", "Services\MainteXpert.KaizenService\MainteXpert.KaizenService.Application\MainteXpert.KaizenService.Application.csproj", "{FA734723-0D98-49B3-BE3A-8DB716952E7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainteXpert.KaizenService.Application", "Services\MainteXpert.KaizenService\MainteXpert.KaizenService.Application\MainteXpert.KaizenService.Application.csproj", "{FA734723-0D98-49B3-BE3A-8DB716952E7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPMMetricsService", "TPMMetricsService", "{DA19E2B4-C4CB-4786-BBD0-0C89C3DAF6F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.TPMMetricsService.Application", "Services\MainteXpert.TPMMetricsService\MainteXpert.TPMMetricsService.Application\MainteXpert.TPMMetricsService.Application.csproj", "{CCE68C3A-A55A-4807-A289-778E3BDD6BE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.TPMMetricsService.API", "Services\MainteXpert.TPMMetricsService\MainteXpert.TPMMetricsService.API\MainteXpert.TPMMetricsService.API.csproj", "{D8645061-0051-475D-92F9-B069054BBADF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AnalyticsService", "AnalyticsService", "{770828EA-5DF3-4C66-96EE-15CAB94EED7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.AnalyticsService.Application", "Services\MainteXpert.AnalyticsService\MainteXpert.AnalyticsService.Application\MainteXpert.AnalyticsService.Application.csproj", "{01ABD404-1C5C-4322-82FF-4687E13952A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainteXpert.AnalyticsService.API", "Services\MainteXpert.AnalyticsService\MainteXpert.AnalyticsService.API\MainteXpert.AnalyticsService.API.csproj", "{5518C2A5-4E6A-4128-B7C8-33653C567519}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +213,22 @@ Global
 		{FA734723-0D98-49B3-BE3A-8DB716952E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA734723-0D98-49B3-BE3A-8DB716952E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA734723-0D98-49B3-BE3A-8DB716952E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE68C3A-A55A-4807-A289-778E3BDD6BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE68C3A-A55A-4807-A289-778E3BDD6BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE68C3A-A55A-4807-A289-778E3BDD6BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE68C3A-A55A-4807-A289-778E3BDD6BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8645061-0051-475D-92F9-B069054BBADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8645061-0051-475D-92F9-B069054BBADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8645061-0051-475D-92F9-B069054BBADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8645061-0051-475D-92F9-B069054BBADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01ABD404-1C5C-4322-82FF-4687E13952A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01ABD404-1C5C-4322-82FF-4687E13952A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01ABD404-1C5C-4322-82FF-4687E13952A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01ABD404-1C5C-4322-82FF-4687E13952A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5518C2A5-4E6A-4128-B7C8-33653C567519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5518C2A5-4E6A-4128-B7C8-33653C567519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5518C2A5-4E6A-4128-B7C8-33653C567519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5518C2A5-4E6A-4128-B7C8-33653C567519}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -243,6 +271,12 @@ Global
 		{BC3780E4-9A7C-4DAE-9133-FD24F3D269EF} = {220DB5EC-699E-4AB8-B9A6-DE98174FB3EA}
 		{D0ADDFC5-7B36-498E-9D33-85381209B037} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
 		{FA734723-0D98-49B3-BE3A-8DB716952E7C} = {D0ADDFC5-7B36-498E-9D33-85381209B037}
+		{DA19E2B4-C4CB-4786-BBD0-0C89C3DAF6F7} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
+		{CCE68C3A-A55A-4807-A289-778E3BDD6BE2} = {DA19E2B4-C4CB-4786-BBD0-0C89C3DAF6F7}
+		{D8645061-0051-475D-92F9-B069054BBADF} = {DA19E2B4-C4CB-4786-BBD0-0C89C3DAF6F7}
+		{770828EA-5DF3-4C66-96EE-15CAB94EED7C} = {B8EA7152-21BA-4758-AC29-02A568963EE0}
+		{01ABD404-1C5C-4322-82FF-4687E13952A4} = {770828EA-5DF3-4C66-96EE-15CAB94EED7C}
+		{5518C2A5-4E6A-4128-B7C8-33653C567519} = {770828EA-5DF3-4C66-96EE-15CAB94EED7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2DED1DD-27C1-41FE-B5B1-7AC3D3A095A4}

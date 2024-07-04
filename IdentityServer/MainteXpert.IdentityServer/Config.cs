@@ -10,11 +10,12 @@ public static class Config
         new ApiResource("resource_user", "User API"){Scopes={"user_fullpermission"}},
         new ApiResource("resource_activity", "Activity API"){Scopes={"activity_fullpermission"}},
         new ApiResource("resource_errorcard", "ErrorCard API"){Scopes={"errorcard_fullpermission"}},
-        new ApiResource("resource_workorder", "ErrorCard API"){Scopes={"workorder_fullpermission"}},
+        new ApiResource("resource_workorder", "WorkOrder API"){Scopes={"workorder_fullpermission"}},
         new ApiResource("resource_lookup", "Lookup API"){Scopes={"lookup_fullpermission"}},
         new ApiResource("resource_report", "Report API"){Scopes={"report_fullpermission"}},
-        new ApiResource("resource_maintenance", "Report API"){Scopes={"maintenance_fullpermission"}},
-        new ApiResource("resource_inventory", "Report API"){Scopes={"inventory_fullpermission"}},
+        new ApiResource("resource_maintenance", "Maintenance API"){Scopes={"maintenance_fullpermission"}},
+        new ApiResource("resource_inventory", "Inventory API"){Scopes={"inventory_fullpermission"}},
+        new ApiResource("resource_tpmservice", "TpmService API"){Scopes={"tpmservice_fullpermission"}},
         new ApiResource("resource_gateway", "Gateway API"){Scopes={"gateway_fullpermission"}},
         new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
     };
@@ -45,6 +46,7 @@ public static class Config
             new ApiScope("lookup_fullpermission", "Lookup API için full erişim"),
             new ApiScope("maintenance_fullpermission", "Maintenance Schedule API için full erişim"),
             new ApiScope("inventory_fullpermission", "Inventory Schedule API için full erişim"),
+            new ApiScope("tpmservice_fullpermission", "Inventory Schedule API için full erişim"),
             new ApiScope("gateway_fullpermission", "Gateway API için full erişim"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
@@ -68,6 +70,7 @@ public static class Config
                     "maintenance_fullpermission",
                     "workorder_fullpermission",
                     "inventory_fullpermission",
+                    "tpmservice_fullpermission",
                     "gateway_fullpermission",
                     IdentityServerConstants.LocalApi.ScopeName
                 }
@@ -88,6 +91,7 @@ public static class Config
                     "user_fullpermission",
                     "maintenance_fullpermission",
                     "inventory_fullpermission",
+                    "tpmservice_fullpermission",
                     "workorder_fullpermission",
                     "gateway_fullpermission",
                     IdentityServerConstants.StandardScopes.Email,
@@ -115,6 +119,7 @@ public static class Config
                     "lookup_fullpermission",
                     "report_fullpermission",
                     "inventory_fullpermission",
+                    "tpmservice_fullpermission",
                     "user_fullpermission",
                     "maintenance_fullpermission",
                     "workorder_fullpermission",                    

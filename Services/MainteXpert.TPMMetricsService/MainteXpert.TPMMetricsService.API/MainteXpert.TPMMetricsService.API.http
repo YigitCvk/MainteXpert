@@ -1,0 +1,6 @@
+@MainteXpert.TPMMetricsService.API_HostAddress = http://localhost:5200
+
+GET {{MainteXpert.TPMMetricsService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
