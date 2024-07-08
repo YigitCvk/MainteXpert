@@ -77,5 +77,6 @@
             var result = await _mediator.Send(new GetAllEquipmentsQuery());
             return Ok(result.Data);
         }
+
     }
 }

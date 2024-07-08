@@ -8,5 +8,8 @@
         public string Description { get; set; }
         public DateTime ScheduledDate { get; set; }
         public string Status { get; set; }  // Pending, Completed, etc.
+        public string AssignedTo { get; set; }
+        public string EquipmentId { get; set; }
+
     }
 }
